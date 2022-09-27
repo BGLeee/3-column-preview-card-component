@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.attribution {
+   
+    
+  font-size: 11px;
+  text-align: center;
+  
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.main{
+    padding: 20px;
+    
+}
+article{
+    padding: 30px;
+
+}
+.main img{
+    margin-bottom: 25px;
+}
+.main h1{
+    margin-bottom: 20px;
+    font-family: 'Big Shoulders Display', cursive;
+    color:  hsl(0, 0%, 95%);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.main p{
+ margin-bottom: 30px;
+ font-size: 15px;   
+}
+
+
+
+
+
+
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    
+   
+
+    
+}
+.sedans{
+    background-color: var(--Brightorange);
+    border-radius: 0.6rem 0.6rem 0 0;
+    color: white;
+}
+.suvs{
+    background-color: var(--Darkcyan);
+    color: white;
+}
+
+.luxury{
+    background-color: var(--Verydarkcyan);
+    border-radius:  0 0 0.6rem 0.6rem;
+    color: white;
+
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border-color: white;
+    border: 2px solid white;
+    font-family: 'Lexend Deca', sans-serif;    
+}
+
+.sedans button{
+    color: var(--Brightorange);
+}
+.suvs button{
+    color: var(--Darkcyan);
+}
+.luxury button{
+    color: var(--Verydarkcyan);
+}
+button:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width:450px ){
+    
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+    .sedans{
+       border-radius: 0.6rem 0 0 0.6rem;
+        }
+    
+    
+    .luxury{
+        border-radius:  0 0.6rem 0.6rem 0;
+    }
+    article{
+        padding: 40px;
+    }
+    .main p{
+        margin-bottom: 80px;
+
+
+    }
+}
