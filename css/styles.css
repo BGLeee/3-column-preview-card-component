@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 .attribution {
-   
-    
   font-size: 11px;
   text-align: center;
-  
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -26,7 +23,8 @@
 
 .main{
     padding: 20px;
-    
+    display: flex;
+    flex-direction: column;
 }
 article{
     padding: 30px;
@@ -57,10 +55,6 @@ p{
     font-family: 'Lexend Deca', sans-serif;
     color:hsla(0, 0%, 100%, 0.75);
     line-height: 1.6;
-    
-   
-
-    
 }
 .sedans{
     background-color: var(--Brightorange);
@@ -100,20 +94,21 @@ button:hover{
     background-color: transparent;
     color: white;
     cursor: pointer;
+    
 }
 
-@media (min-width:450px ){
+@media (min-width: 650px ){
     
     .main{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+       grid-template-columns: repeat(3,1fr);
+       /* flex-direction: row; */
         min-height: 100vh;
         max-width: 900px;
         margin: auto;
     }
     .sedans{
-       border-radius: 0.6rem 0 0 0.6rem;
+       border-radius: 0.6rem  0 0 0.6rem;
         }
     
     
